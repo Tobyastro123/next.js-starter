@@ -21,7 +21,7 @@ class Index extends Component {
       {
         posts.map(post => (
           <li key={post.id}>
-            <Link href={`/post?id=${post.id}`}>
+            <Link href={`/post?id=${post.id}`} as={`/p?id=${post.id}`}>
               <a>{post.title}</a>
             </Link>
           </li>

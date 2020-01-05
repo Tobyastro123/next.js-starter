@@ -19,7 +19,7 @@ const Post = ({ id, comments }) => (
 Post.getInitialProps = async ({ query }) => {const res = await axios.get(`https://jsonplaceholder.typicode.com/comments?postId=${query.id}`);
 const { data } = res;
 
-console.log('data', data[0]);
+// console.log('data', data[0]);
 return { ...query, comments: data };
 };
 
